@@ -636,6 +636,26 @@ video {
   height: 100%;
 }
 
+.h-\[calc\(90svh\)\] {
+  height: calc(90svh);
+}
+
+.h-\[calc\(90svh\+\)\] {
+  height: calc(90svh + );
+}
+
+.h-\[calc\(90svh\+h-16\)\] {
+  height: calc(90svh + h - 16);
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[calc\(90svh\+4rem\)\] {
+  height: calc(90svh + 4rem);
+}
+
 .min-h-0 {
   min-height: 0px;
 }

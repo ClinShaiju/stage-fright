@@ -692,6 +692,18 @@ video {
   flex-basis: 48rem;
 }
 
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-3\/4 {
+  flex-basis: 75%;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -927,8 +939,16 @@ video {
     width: auto;
   }
 
+  .md\:basis-2\/3 {
+    flex-basis: 66.666667%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {

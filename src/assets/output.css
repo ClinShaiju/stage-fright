@@ -724,8 +724,16 @@ video {
   flex-wrap: wrap;
 }
 
+.place-items-end {
+  place-items: end;
+}
+
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -983,6 +991,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
   }
 
   .md\:items-center {

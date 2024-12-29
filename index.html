@@ -1,127 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vite App</title>
-  <link href="./src/assets/output.css" rel="stylesheet">
-</head>
-
-<body class="bg-gray-400 w-dvw overflow-x-hidden">
-  <div id="app" class="w-dvw">
-
-
-    <nav class="border-gray-200 bg-black fixed w-full z-50">
-      <div class="md:max-w-lg flex flex-wrap items-center justify-between mx-0 md:mx-auto p-4">
-        
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black border-gray-700">
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 md:text-blue-500"
-                aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent">About</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700  md:hover:bg-transparent">Music</a>
-            </li>
-          </ul>
-        </div>
-        <a class="text-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        </a>
-        <div class="hidden w-full md:block md:w-auto">
-
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black border-gray-700">
-            <li>
-              <a href="#"
-                class="block py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent">Merch</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700  md:hover:bg-transparent">Tours</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent">Contact</a>
-            </li>
-          </ul>
-
-        </div>
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden focus:outline-none focus:ring-2  text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-
-        </button>
-    </nav>
-    <main>
-      <div class="flex flex-col bg-gray-800 w-auto h-[calc(90svh+4rem)] bg-[url('/src/assets/logo/home_background.jpg')] bg-center md:bg-fixed">
-        <div class="h-16"></div>
-        <div class="flex flex-row items-center md:items-end w-full shrink basis-3/4 md:basis-2/3 justify-center">
-          <div class="flex max-w-3xl min-w-0 mx-6">
-            <img src="/src/assets/logo/full_logo_transparent.png" class="max-w-3xl min-h-0 min-w-0" alt="Stage Fright Logo">
-          </div>
-        </div>
-        <div class="flex items-start md:items-center basis-1/4 md:basis-2/3 w-full justify-center">
-          <div class="flex flex-row items-center max-w-3xl basis-[48rem] h-12 justify-between mx-6 gap-6">
-            <a href="https://www.facebook.com" class="h-full w-12" aria-label="Check out our Facebook page!">
-              <img src="/src/assets/icons/facebook.svg"
-                class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
-                alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com" class="h-full max-w-12" aria-label="Check out our Instagram page!">
-              <img src="/src/assets/icons/instagram.svg"
-                class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
-                alt="Instagram">
-            </a>
-            <a href="https://www.youtube.com" class="h-full max-w-12" aria-label="Check out our music videos on Youtube!">
-              <img src="/src/assets/icons/youtube.svg"
-                class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
-                alt="Youtube">
-            </a>
-            <a href="https://www.spotify.com" class="h-full max-w-12" aria-label="Check out our music on Spotify!">
-              <img src="/src/assets/icons/spotify.svg"
-                class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
-                alt="Spotify">
-            </a>
-            <a href="https://music.apple.com" class="h-full max-w-12" aria-label="Check out our music on Apple Music!">
-              <img src="/src/assets/icons/apple-music.svg"
-                class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
-                alt="Apple Music">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="bg-[#ff5233] w-auto h-[90svh]">
-        <h1 class="font-bold text-lg">wow</h1>
-
-      </div>
-      <div class="bg-gray-800 w-auto h-[90svh]">
-
-      </div>
-    </main>
-    <footer>
-      <div class="bg-gray-900 w-auto h-24">
-
-      </div>
-    </footer>
-
-
-
-  </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/src/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage Fright</title>
+    <link href="./src/assets/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app" class="w-dvw"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "thedark";
+    src: url("./fonts/thedark.ttf");
+}
+
+@font-face {
+    font-family: "grunge";
+    src: url("./fonts/grunge.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "loud";
+    src: url("./fonts/loud.ttf");
+}

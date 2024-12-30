@@ -1,17 +1,19 @@
 <script setup>
+import MobileHamburger  from './MobileHamburger.vue'
+import store  from '/src/store.js'
 import { ref } from 'vue'
 
 const activeClass = ref('')
-const active = ref(false)
 
 function toggleNav() {
-  active.value = !active.value
-  if (active.value) activeClass.value = 'is-active'
+  store.navActive = !store.navActive
+  console.log(store.navActive)
+  if (store.navActive) activeClass.value = 'is-active'
   else activeClass.value = ''
 }
 </script>
 <template>
-  <nav class="border-gray-200 bg-black fixed w-full z-50 font-loud text-xl">
+  <nav class="border-gray-200 bg-black fixed w-full z-50 font-loud text-xl max-h-20">
     <div class="md:max-w-lg flex flex-wrap items-center justify-between mx-0 md:mx-auto p-4">
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul
@@ -46,7 +48,7 @@ function toggleNav() {
           </li>
         </ul>
       </div>
-      <a class="text-center">
+      <a class="text-center z-50">
         <img src="/src/assets/logo/logo_square.png" class="h-12 m-0 p-0" alt="Stage Fright Logo" />
       </a>
       <div class="hidden w-full md:block md:w-auto">
@@ -87,7 +89,7 @@ function toggleNav() {
         aria-label="Navigation Burger"
         :class="activeClass"
         @click="toggleNav"
-        class="hamburger hamburger--spin inline-flex items-center p-2 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-slate-900 focus:ring-gray-800"
+        class="hamburger hamburger--spin z-50 inline-flex items-center p-2 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-slate-900 focus:ring-gray-800"
         type="button"
       >
         <span class="hamburger-box">
@@ -95,5 +97,6 @@ function toggleNav() {
         </span>
       </button>
     </div>
+    <MobileHamburger :is-active="store.navActive"/>
   </nav>
 </template>

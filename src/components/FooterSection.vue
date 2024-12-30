@@ -3,7 +3,7 @@ import {RouterLink} from 'vue-router'
 </script>
 <template>
   <footer>
-      <div class="bg-gray-900 w-auto h-24">
+      <div class="bg-black w-auto h-24">
 
       </div>
     </footer>

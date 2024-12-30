@@ -8,6 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+      meta: { title: "Stage Fright" }
     },
     {
       path: '/about',
@@ -16,8 +17,45 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
+      meta: { title: "About Us | Stage Fright" },
+    },{
+      path: '/music',
+      name: 'music',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/MusicView.vue'),
+      meta: { title: "Music | Stage Fright" },
+    },{
+      path: '/merch',
+      name: 'merch',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/MerchView.vue'),
+      meta: { title: "Merch | Stage Fright" },
+    },{
+      path: '/tours',
+      name: 'tours',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ToursView.vue'),
+      meta: { title: "Tours | Stage Fright" },
+    },{
+      path: '/contact',
+      name: 'contact',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ContactView.vue'),
+      meta: { title: "Contact Us | Stage Fright" },
     },
   ],
+})
+
+router.beforeEach((to, from) => {
+  document.title = to.meta?.title ?? 'Stage Fright'
 })
 
 export default router

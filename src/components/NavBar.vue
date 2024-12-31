@@ -1,15 +1,13 @@
 <script setup>
 import MobileHamburger  from './MobileHamburger.vue'
-import store  from '/src/store.js'
-import { ref } from 'vue'
+import {useSiteStore}  from '/src/stores/site.js'
 
-const activeClass = ref('')
+const siteStore = useSiteStore()
 
 function toggleNav() {
-  store.navActive = !store.navActive
-  console.log(store.navActive)
-  if (store.navActive) activeClass.value = 'is-active'
-  else activeClass.value = ''
+  siteStore.navActive = !siteStore.navActive
+  if (siteStore.navActive) siteStore.navActiveClass = 'is-active'
+  else siteStore.navActiveClass = ''
 }
 </script>
 <template>
@@ -87,7 +85,7 @@ function toggleNav() {
       <button
         id="burger"
         aria-label="Navigation Burger"
-        :class="activeClass"
+        :class="siteStore.navActiveClass"
         @click="toggleNav"
         class="hamburger hamburger--spin z-50 inline-flex items-center p-2 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-slate-900 focus:ring-gray-800"
         type="button"
@@ -97,6 +95,6 @@ function toggleNav() {
         </span>
       </button>
     </div>
-    <MobileHamburger :is-active="store.navActive"/>
+    <MobileHamburger :is-active="siteStore.navActive"/>
   </nav>
 </template>

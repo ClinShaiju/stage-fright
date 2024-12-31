@@ -22,7 +22,7 @@
           class="flex flex-row items-center max-w-3xl basis-[48rem] h-12 justify-between mx-6 gap-6"
         >
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/people/Stage-Fright/61571393279413/"
             class="h-full w-12"
             aria-label="Check out our Facebook page!"
           >
@@ -33,7 +33,7 @@
             />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/stagefrightrockband/"
             class="h-full max-w-12"
             aria-label="Check out our Instagram page!"
           >
@@ -44,7 +44,7 @@
             />
           </a>
           <a
-            href="https://www.youtube.com"
+            href="https://www.youtube.com/@stagefrightrockband"
             class="h-full max-w-12"
             aria-label="Check out our music videos on Youtube!"
           >
@@ -55,7 +55,7 @@
             />
           </a>
           <a
-            href="https://www.spotify.com"
+            href="https://open.spotify.com/user/314pmfz6ftbrlmjmgmtacdd5ntx4"
             class="h-full max-w-12"
             aria-label="Check out our music on Spotify!"
           >

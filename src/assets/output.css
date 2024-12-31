@@ -803,6 +803,26 @@ video {
   padding-top: 4rem;
 }
 
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[10\] {
+  padding-top: 10;
+}
+
+.pt-\[10vh\] {
+  padding-top: 10vh;
+}
+
+.pt-\[10v\] {
+  padding-top: 10v;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
 .text-center {
   text-align: center;
 }

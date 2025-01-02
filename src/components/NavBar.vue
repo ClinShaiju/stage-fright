@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import MobileHamburger  from './MobileHamburger.vue'
 import {useSiteStore}  from '/src/stores/site.js'
 
@@ -46,9 +47,9 @@ function toggleNav() {
           </li>
         </ul>
       </div>
-      <a class="text-center z-50">
+      <RouterLink class="text-center z-50" to="/">
         <img src="/src/assets/logo/logo_square.png" class="h-12 m-0 p-0" alt="Stage Fright Logo" />
-      </a>
+      </RouterLink>
       <div class="hidden w-full md:block md:w-auto">
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black border-gray-700"

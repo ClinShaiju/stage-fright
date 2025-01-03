@@ -56,6 +56,11 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
       meta: { title: 'Contact Us | Stage Fright' },
     },
+    {
+      path: "/:pathMatch(.*)*",
+      name: 'ErrorView',
+      component: () => import('../views/ErrorView.vue'),
+    },
   ],
 })
 

@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 <template>
   <footer class="bg-black w-auto h-auto flex justify-center">
-    <div class="bg-black w-full h-auto flex flex-col md:flex-row-reverse items-center py-8 px-16 max-w-screen-xl">
+    <div class="bg-black w-full h-auto flex flex-col md:flex-row-reverse items-center py-8 md:px-16 px-8 max-w-screen-xl">
       <div class="flex flex-col items-center">
         <p class="text-white">
           Contact:
@@ -43,7 +43,7 @@ import { RouterLink } from 'vue-router'
       <div class="hidden md:block h-full flex-grow"></div>
       <div class="flex flex-col items-center">
         <a>
-          <img src="/src/assets/logo/bpa.png" alt="BPA Logo" class="h-20" />
+          <img src="/src/assets/logo/bpa.png" alt="BPA Logo" class="w-72" />
         </a>
 
         <div class="mt-4">
@@ -51,7 +51,7 @@ import { RouterLink } from 'vue-router'
             class="flex items-start md:items-center basis-1/4 md:basis-2/3 w-full justify-center"
           >
             <div
-              class="flex flex-row items-center max-w-3xl basis-[48rem] h-12 justify-between mx-6 gap-6"
+              class="flex flex-row items-center max-w-3xl basis-[48rem] h-12 justify-between gap-6"
             >
               <a
                 href="https://www.facebook.com/people/Stage-Fright/61571393279413/"

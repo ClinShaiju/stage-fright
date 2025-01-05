@@ -12,7 +12,7 @@ function toggleNav() {
 }
 </script>
 <template>
-  <nav class="border-gray-200 bg-black fixed w-full z-50 font-loud text-xl max-h-20">
+  <nav class="bg-black fixed w-full z-50 font-loud text-xl max-h-20 border-b-2 border-stone-950">
     <div class="md:max-w-lg flex flex-wrap items-center justify-between mx-0 md:mx-auto p-4">
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul

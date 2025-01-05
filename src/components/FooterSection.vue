@@ -1,8 +1,7 @@
-<script>
-import { RouterLink } from 'vue-router'
+<script setup>
 </script>
 <template>
-  <footer class="bg-black w-auto h-auto flex justify-center">
+  <footer class="bg-black w-auto h-auto flex justify-center border-t-4 border-neutral-950">
     <div class="bg-black w-full h-auto flex flex-col md:flex-row-reverse items-center py-8 md:px-16 px-8 max-w-screen-xl">
       <div class="flex flex-col items-center">
         <p class="text-white">

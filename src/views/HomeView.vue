@@ -23,7 +23,7 @@
         >
           <a
             href="https://www.facebook.com/people/Stage-Fright/61571393279413/"
-            class="h-full w-12"
+            class="h-full max-w-12"
             aria-label="Check out our Facebook page!"
           >
             <img

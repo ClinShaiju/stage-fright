@@ -25,9 +25,9 @@
             </li>
             <li>
               <RouterLink
-                to="/accessibilty"
+                to="/accessibility"
                 class="block px-3 text-white underline"
-                aria-current="accessibilty"
+                aria-current="accessibility"
                 >Accessibilty</RouterLink
               >
             </li>

@@ -5,9 +5,9 @@ const siteStore = useSiteStore()
 
 <template>
   <Transition name="slide" mode="in-out" class="z-40">
-    <div v-if="siteStore.navActive" class="md:hidden h-screen text-4xl z-40">
+    <div v-if="siteStore.navActive" class="md:hidden h-dvh text-4xl z-40 w-dvw">
       <ul
-        class="pt-[10vh] text-white m-0 h-full font-medium flex flex-col p-4 md:p-0border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black border-transparent items-center z-40"
+        class="pt-[10vh] text-white m-0 h-full font-medium flex flex-col p-4 md:p-0border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black border-transparent items-center z-40"
       >
         <li>
           <RouterLink

@@ -12,7 +12,9 @@ function toggleNav() {
 }
 </script>
 <template>
-  <nav class="flex flex-row flex-wrap bg-black fixed w-full z-50 font-loud text-xl max-h-24 border-b-2 border-stone-950 space-between justify-between">
+  <nav
+    class="flex flex-row flex-wrap bg-black fixed w-full z-50 font-loud text-xl max-h-24 border-b-2 border-stone-950 space-between justify-between"
+  >
     <div class="flex items-center justify-between mx-0 md:mx-auto p-4 w-full max-w-screen-md">
       <div class="w-20 h-full hidden md:block"></div>
       <div class="flex flex-row items-center mx-0">
@@ -50,11 +52,7 @@ function toggleNav() {
           </ul>
         </div>
         <RouterLink class="text-center z-50 md:px-4" to="/">
-          <img
-            src="/src/assets/logo/logo_square.png"
-            class="h-12 m-0 p-0"
-            alt="Stage Fright Logo"
-          />
+          <img src="/assets/logo/logo_square.png" class="h-12 m-0 p-0" alt="Stage Fright Logo" />
         </RouterLink>
         <div class="hidden w-full md:block md:w-auto">
           <ul
@@ -98,7 +96,7 @@ function toggleNav() {
             class="z-50 inline-flex items-center p-2 justify-center text-sm rounded-lg text-gray-400 hover:bg-neutral-950"
             type="button"
           >
-            <img src="/src/assets/icons/cart.svg" class="w-9 invert" alt="Cart" />
+            <img src="/assets/icons/cart.svg" class="w-9 invert" alt="Cart" />
           </button>
         </RouterLink>
         <button

@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <div
-      class="flex flex-col bg-gray-800 w-auto h-[calc(90svh+4rem)] bg-[url('/src/assets/logo/home_background.jpg')] bg-center md:bg-fixed"
+      class="flex flex-col bg-gray-800 w-auto h-[calc(90svh+4rem)] bg-[url('/assets/logo/home_background.jpg')] bg-center md:bg-fixed"
     >
       <div class="h-16"></div>
 
@@ -10,7 +10,7 @@
       >
         <div class="flex max-w-3xl min-w-0 mx-6">
           <img
-            src="/src/assets/logo/full_logo_transparent.png"
+            src="/assets/logo/full_logo_transparent.png"
             class="max-w-3xl min-h-0 min-w-0"
             alt="Stage Fright Logo"
           />
@@ -26,7 +26,7 @@
             aria-label="Check out our Facebook page!"
           >
             <img
-              src="/src/assets/icons/facebook.svg"
+              src="/assets/icons/facebook.svg"
               class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
               alt="Facebook"
             />
@@ -37,7 +37,7 @@
             aria-label="Check out our Instagram page!"
           >
             <img
-              src="/src/assets/icons/instagram.svg"
+              src="/assets/icons/instagram.svg"
               class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
               alt="Instagram"
             />
@@ -48,7 +48,7 @@
             aria-label="Check out our music videos on Youtube!"
           >
             <img
-              src="/src/assets/icons/youtube.svg"
+              src="/assets/icons/youtube.svg"
               class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
               alt="Youtube"
             />
@@ -59,7 +59,7 @@
             aria-label="Check out our music on Spotify!"
           >
             <img
-              src="/src/assets/icons/spotify.svg"
+              src="/assets/icons/spotify.svg"
               class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
               alt="Spotify"
             />
@@ -70,7 +70,7 @@
             aria-label="Check out our music on Apple Music!"
           >
             <img
-              src="/src/assets/icons/apple-music.svg"
+              src="/assets/icons/apple-music.svg"
               class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
               alt="Apple Music"
             />
@@ -86,18 +86,14 @@
         <div
           class="flex flex-col border border-neutral-700 h-auto hover:scale-105 transition-all rounded-md overflow-hidden w-fit"
         >
-          <img
-            src="/src/assets/images/escape.jpg"
-            alt="'Escape' Album Cover"
-            class="max-w-80 h-fit"
-          />
+          <img src="/assets/images/escape.jpg" alt="'Escape' Album Cover" class="max-w-80 h-fit" />
           <p class="text-white text-center p-8 text-3xl uppercase font-loud underline">Escape</p>
         </div>
         <div
           class="flex flex-col border border-neutral-700 h-auto hover:scale-105 transition-all rounded-md overflow-hidden w-fit"
         >
           <img
-            src="/src/assets/images/scared_to_death.jpg"
+            src="/assets/images/scared_to_death.jpg"
             alt="'Scared To Death' Album Cover"
             class="max-w-80 h-fit"
           />
@@ -109,7 +105,7 @@
           class="flex flex-col border border-neutral-700 h-auto hover:scale-105 transition-all rounded-md overflow-hidden w-fit"
         >
           <img
-            src="/src/assets/images/endorphins.jpg"
+            src="/assets/images/endorphins.jpg"
             alt="'Endorphins' Album Cover"
             class="max-w-80 h-fit"
           />
@@ -127,7 +123,7 @@
     <div class="w-auto bg-zinc-900 flex p-8 md:py-16 items-center justify-center">
       <div class="max-w-screen-2xl w-full flex flex-col md:flex-row items-center">
         <img
-          src="/src/assets/images/team.png"
+          src="/assets/images/team.png"
           alt="Band Group Picture"
           class="h-auto md:max-w-2xl rounded-lg flex-shrink mb-16"
         />

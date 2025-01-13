@@ -4,7 +4,9 @@
   <div class="flex flex-col bg-neutral-900 min-h-dvh items-center px-4 md:px-10 py-6">
     <div class="flex flex-col min-h-dvh items-center max-w-7xl">
       <div class="h-[80px]"></div>
-      <h1 class="flex text-white font-thedark text-6xl mt-3 text-center mb-8">About Stage Fright</h1>
+      <h1 class="flex text-white font-thedark text-6xl mt-3 text-center mb-8">
+        About Stage Fright
+      </h1>
       <p class="flex text-white text-center p-3 text-lg">
         Stage Fright is made of four members (Paul Carter, Gene Martin, Ace Kinley, and Peter
         Winters). The boys formed the band during their freshman year of high school, and they first
@@ -23,10 +25,10 @@
           class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-rows-2 sm:grid-cols-1 items-center justify-center text-center w-fit p-8"
         >
           <div
-            class="bg-[url(/src/assets/images/clin_background.jpeg)] bg-opacity-80 rounded-lg p-6 justify-center items-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
+            class="bg-[url(/assets/images/clin_background.jpeg)] bg-opacity-80 rounded-lg p-6 justify-center items-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
           >
             <img
-              src="/src/assets/images/clin_edited.png"
+              src="/assets/images/clin_edited.png"
               alt="Photo of Paul Carter"
               class="w-52 items-center mb-3 rounded-lg mx-auto"
             />
@@ -43,10 +45,10 @@
           </div>
 
           <div
-            class="relative bg-[url(/src/assets/images/drew_background.jpg)] rounded-lg  justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
+            class="relative bg-[url(/assets/images/drew_background.jpg)] rounded-lg justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
           >
             <img
-              src="/src/assets/images/drew_edited.png"
+              src="/assets/images/drew_edited.png"
               alt="Photo of Gene Martin"
               class="w-52 items-center mb-3 rounded-lg mx-auto"
             />
@@ -65,10 +67,10 @@
           </div>
 
           <div
-            class="bg-[url(/src/assets/images/FINAL.png)] bg-opacity-80 rounded-lg  justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
+            class="bg-[url(/assets/images/FINAL.png)] bg-opacity-80 rounded-lg justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
           >
             <img
-              src="/src/assets/images/vic_edited.png"
+              src="/assets/images/vic_edited.png"
               alt="Photo of Ace Kinley"
               class="w-52 items-center mb-3 rounded-lg mx-auto"
             />
@@ -86,10 +88,10 @@
           </div>
 
           <div
-            class="bg-[url(/src/assets/images/clin_background.jpeg)] bg-opacity-80 rounded-lg  justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
+            class="bg-[url(/assets/images/clin_background.jpeg)] bg-opacity-80 rounded-lg justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
           >
             <img
-              src="/src/assets/images/josh_edited.png"
+              src="/assets/images/josh_edited.png"
               alt="Photo of Peter Winters"
               class="w-52 items-center mb-3 rounded-lg mx-auto"
             />
@@ -114,7 +116,9 @@
         >
           The Anthem of Four Lives
         </h1>
-        <div class="flex flex-col max-w-screen-2xl p-3 ml-3 text-center mb-8 text-white text-lg gap-6">
+        <div
+          class="flex flex-col max-w-screen-2xl p-3 ml-3 text-center mb-8 text-white text-lg gap-6"
+        >
           <p>
             In the sweat-drenched suburbs of Tampa, Florida, four misfits collided at the crossroads
             of boredom and raw ambition. Paul Carter, a choir kid with a heart-shattering voice, met

@@ -1,8 +1,9 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <footer class="bg-black w-auto h-auto flex justify-center border-t-4 border-neutral-950">
-    <div class="bg-black w-full h-auto flex flex-col md:flex-row-reverse items-center py-8 md:px-16 px-8 max-w-screen-xl">
+    <div
+      class="bg-black w-full h-auto flex flex-col md:flex-row-reverse items-center py-8 md:px-16 px-8 max-w-screen-xl"
+    >
       <div class="flex flex-col items-center">
         <p class="text-white">
           Contact:
@@ -42,7 +43,7 @@
       <div class="hidden md:block h-full flex-grow"></div>
       <div class="flex flex-col items-center">
         <a>
-          <img src="/src/assets/logo/bpa.png" alt="BPA Logo" class="w-72" />
+          <img src="/assets/logo/bpa.png" alt="BPA Logo" class="w-72" />
         </a>
 
         <div class="mt-4">
@@ -58,7 +59,7 @@
                 aria-label="Check out our Facebook page!"
               >
                 <img
-                  src="/src/assets/icons/facebook.svg"
+                  src="/assets/icons/facebook.svg"
                   class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
                   alt="Facebook"
                 />
@@ -69,7 +70,7 @@
                 aria-label="Check out our Instagram page!"
               >
                 <img
-                  src="/src/assets/icons/instagram.svg"
+                  src="/assets/icons/instagram.svg"
                   class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
                   alt="Instagram"
                 />
@@ -80,7 +81,7 @@
                 aria-label="Check out our music videos on Youtube!"
               >
                 <img
-                  src="/src/assets/icons/youtube.svg"
+                  src="/assets/icons/youtube.svg"
                   class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
                   alt="Youtube"
                 />
@@ -91,7 +92,7 @@
                 aria-label="Check out our music on Spotify!"
               >
                 <img
-                  src="/src/assets/icons/spotify.svg"
+                  src="/assets/icons/spotify.svg"
                   class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
                   alt="Spotify"
                 />
@@ -102,7 +103,7 @@
                 aria-label="Check out our music on Apple Music!"
               >
                 <img
-                  src="/src/assets/icons/apple-music.svg"
+                  src="/assets/icons/apple-music.svg"
                   class="h-full w-full brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-125 transition-all"
                   alt="Apple Music"
                 />

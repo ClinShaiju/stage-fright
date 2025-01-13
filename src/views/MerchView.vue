@@ -9,7 +9,9 @@ const popuped = ref(false) // Controls visibility of the popup
 const popupText = ref('') // Text content of the popup
 
 // Filter products to exclude 'ticket' type
-const filteredProducts = Array.from(products.entries()).filter(([, product]) => product.type !== 'ticket')
+const filteredProducts = Array.from(products.entries()).filter(
+  ([, product]) => product.type !== 'ticket',
+)
 
 // Function to trigger the popup
 async function popup(text) {
@@ -22,7 +24,6 @@ async function popup(text) {
   }, 2000)
 }
 </script>
-
 
 <template>
   <div class="bg-neutral-900 min-h-dvh w-dvw flex flex-col items-center">
@@ -41,7 +42,7 @@ async function popup(text) {
           v-for="[id, product] in filteredProducts"
           :key="id"
           class="bg-black max-w-96 border mb-4 rounded-xl border-neutral-800 overflow-hidden hover:scale-105 transition-all duration-300"
-          >
+        >
           <img :src="product.img.main" :alt="product.name" />
           <div class="flex flex-row p-8 justify-between">
             <div class="flex flex-col">
@@ -63,9 +64,12 @@ async function popup(text) {
 
               <button
                 class="text-white border p-4 border-neutral-700 rounded-md bg-red-800 hover:bg-red-700 font-bold transition-all duration-200"
-                @click="cart.addToCart(id, 1); popup(product.name)"
+                @click="
+                  cart.addToCart(id, 1);
+                  popup(product.name)
+                "
               >
-                <img src="/src/assets/icons/cart.png" alt="Add to cart" class="invert w-8" />
+                <img src="/assets/icons/cart.png" alt="Add to cart" class="invert w-8" />
               </button>
             </div>
           </div>

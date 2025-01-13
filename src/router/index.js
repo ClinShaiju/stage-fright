@@ -4,6 +4,9 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior() {
+    return { top: 0, behavior: 'smooth' }
+  },
   routes: [
     {
       path: '/',
@@ -107,5 +110,6 @@ router.beforeEach((to) => {
   siteStore.navActiveClass = ''
   // console.log(store.navActive)
 })
+
 
 export default router

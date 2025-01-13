@@ -25,10 +25,10 @@
             </li>
             <li>
               <RouterLink
-                to="/accessibilty"
+                to="/accessibility"
                 class="block px-3 text-white underline"
-                aria-current="accessibilty"
-                >Accessibilty</RouterLink
+                aria-current="accessibility"
+                >Accessibility</RouterLink
               >
             </li>
             <li>

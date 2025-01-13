@@ -57,6 +57,42 @@ const router = createRouter({
       meta: { title: 'Contact Us | Stage Fright' },
     },
     {
+      path: '/checkout',
+      name: 'checkout',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/CheckoutView.vue'),
+      meta: { title: 'Checkout | Stage Fright' },
+    },
+    {
+      path: '/attributions',
+      name: 'attributions',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AttributionsView.vue'),
+      meta: { title: 'Attributions | Stage Fright' },
+    },
+    {
+      path: '/team',
+      name: 'team',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/TeamView.vue'),
+      meta: { title: 'Team | Stage Fright' },
+    },
+    {
+      path: '/accessibility',
+      name: 'accessibility',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AccessibilityView.vue'),
+      meta: { title: 'Accessibility | Stage Fright' },
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: 'ErrorView',
       component: () => import('../views/ErrorView.vue'),

@@ -89,7 +89,7 @@ async function popup(text) {
             <a href="mailto:booking@stagefrightrock.com" title="Stage Fright's support email"
               >booking@stagefrightrock.com</a
             >
-          </h2>
+          </h2>  
         </div>
         <div class="mb-4">
           <h2 class="flex text-2xl text-white justify-center font-bold mb-1">Phone Number</h2>

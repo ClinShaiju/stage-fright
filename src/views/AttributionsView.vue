@@ -6,7 +6,7 @@
 
     <object
       class="pdf max-w-screen-2xl w-full h-full bg-white"
-      data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+      data="/assets/Attributions.pdf"
       aria-label="Attributions PDF"
     ></object>
   </div>

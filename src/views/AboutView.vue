@@ -44,7 +44,7 @@
             </button>
           </div>
 
-          <div
+          <div  
             class="relative bg-[url(/assets/images/drew_background.jpg)] rounded-lg justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
           >
             <img

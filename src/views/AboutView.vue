@@ -4,7 +4,7 @@
   <div class="flex flex-col bg-neutral-900 min-h-dvh items-center px-4 md:px-10 py-6">
     <div class="flex flex-col min-h-dvh items-center max-w-7xl">
       <div class="h-[80px]"></div>
-      <h1 class="flex text-white font-thedark text-6xl mt-3 text-center mb-8">
+      <h1 class="flex text-white font-thedark text-6xl mt-3 text-center mb-4">
         About Stage Fright
       </h1>
       <p class="flex text-white text-center p-3 text-lg">
@@ -88,7 +88,7 @@
           </div>
 
           <div
-            class="bg-[url(/assets/images/clin_background.jpeg)] bg-opacity-80 rounded-lg justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
+            class="bg-[url(/assets/images/josh_background.jpg)] bg-opacity-80 rounded-lg justify-items-center p-6 items-center justify-center text-center max-w-[375px] max-h-[563px] aspect-[2/3]"
           >
             <img
               src="/assets/images/josh_edited.png"

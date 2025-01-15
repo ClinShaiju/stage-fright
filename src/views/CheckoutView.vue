@@ -1,6 +1,9 @@
 <script setup>
 import { useSiteStore } from '@/stores/site'
 import { cart } from '@/cart'
+import { useRoute } from 'vue-router'
+const route = useRoute()
+console.log(route.query)
 
 const siteStore = useSiteStore()
 function checkoutButton() {
@@ -17,8 +20,16 @@ function buttonType() {
 
 <template>
   <div class="bg-neutral-900 flex flex-col h-vdh items-center">
-    <div class="h-[80px] w-dvw flex-shrink-0"></div>
-    <div class="flex w-dvw max-h-[75vh] md:max-h-[calc(100vh-80px)] justify-center h-screen">
+    <div class="h-[80px] w-dvw flex-shrink-0" v-if="route.query.success != 'true' && route.query.success != 'false'"></div>
+    <div class="bg-black h-dvh flex flex-col items-center justify-center" v-if="route.query.success == 'true' || route.query.success == 'false'">
+      <h1 class="flex text-white w-dvw items-center justify-center text-5xl mb-4">Checkout {{ route.query.success=='true' ? 'Succeeded!' : 'Failed' }}</h1>
+      <h1 class="flex text-white w-dvw items-center justify-center text-xl" v-if="route.query.success=='true'">Your tracking number is {{ Math.floor(Math.random()*10000000) }}</h1>
+      <h1 class="flex text-white w-dvw items-center justify-center text-xl">{{ route.query.success=='true' ? 'Feel free to browse the site further.' : 'Please try again.' }}</h1>
+    </div>
+    <div
+      class="flex w-dvw max-h-[75vh] md:max-h-[calc(100vh-80px)] justify-center h-screen"
+      v-if="route.query.success != 'true' && route.query.success != 'false'"
+    >
       <div
         class="flex flex-col lg:flex-row w-dvw max-h-[calc(100vh-80px)] bg-neutral-950 border-b-0"
       >

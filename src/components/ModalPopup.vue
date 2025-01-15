@@ -17,7 +17,7 @@ props;
             <img src="/assets/icons/close.svg" alt="Close popup" class="w-12 invert brightness-0">
           </button>
         </div>
-        <div class="w-full h-full overflow-scroll md:px-8">
+        <div class="w-full h-full overflow-scroll md:px-8 flex flex-col items-center">
           <slot class="w-full"></slot>
         </div>
 

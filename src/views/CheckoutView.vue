@@ -47,7 +47,7 @@ function buttonType() {
                   <div class="flex flex-col ml-4">
                     <div>
                       <p>
-                        <a class="font-bold">Name:</a>
+                        <a class="font-bold">Name: </a>
                         <a>{{ cart.lookupProduct(product.price).name }}</a>
                       </p>
                     </div>

@@ -48,7 +48,7 @@ async function popup(text) {
           <div class="ml-4">
             <button
               class="p-2 font-bold max-w-32 bg-red-800 hover:bg-red-700 hover:scale-105 rounded-sm border border-neutral-700 transition-all"
-              @click="popup('Added ticket to cart!');cart.addToCart('price_1QcvIQG0Ux6oILTKFM4EMz23h', 1)"
+              @click="popup('Added ticket to cart!');cart.addToCart('price_1QhNDaG0Ux6oILTKbJQ0aNom', 1)"
             >
               <a class="text-nowrap">BUY TICKET</a>
             </button>

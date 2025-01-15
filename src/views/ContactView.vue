@@ -4,6 +4,11 @@ import { ref } from 'vue'
 
 const popuped = ref(false)
 const popupText = ref('')
+const form = ref({
+  name: '',
+  email: '',
+  message: '',
+})
 
 async function popup(text) {
   popupText.value = text
@@ -13,6 +18,21 @@ async function popup(text) {
     popuped.value = false
     clearTimeout(timeout)
   }, 2000)
+}
+
+function handleSubmit() {
+  if (!form.value.name || !form.value.email || !form.value.message) {
+    popup('Please fill out all fields!')
+    return
+  }
+  popup('Your message has been submitted!')
+
+  // Reset the form fields
+  form.value = {
+    name: '',
+    email: '',
+    message: '',
+  }
 }
 </script>
 
@@ -32,28 +52,34 @@ async function popup(text) {
         <h2 class="flex text-xl text-white font-thin justify-center mt-3">
           Our team will get back to you soon!
         </h2>
-        <form class="flex flex-col items-center m-4 gap-4">
+        <form class="flex flex-col items-center m-4 gap-4" onsubmit="return false">
           <input
             id="name"
             type="text"
+            v-model="form.name"
             class="block rounded-md p-2 text-black w-full"
             placeholder="Name"
+            required
           />
           <input
             id="email"
             type="text"
+            v-model="form.email"
             class="block rounded-md p-2 text-black w-full"
             placeholder="Email"
+            required
           />
           <textarea
             id="message"
+            v-model="form.message"
             class="block rounded-md p-2 text-black w-full h-32 md:h-40"
             placeholder="Message"
+            required
           ></textarea>
           <button
             type="button"
             class="transition-all hover:scale-[1.1] px-24 py-2.5 text-xl text-white font-semibold rounded-full border border-white hover:text-white hover:bg-red-700 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 w-auto"
-            @click="popup('Your message has been submitted!')"
+            @click="handleSubmit"
           >
             Submit
           </button>
@@ -89,7 +115,7 @@ async function popup(text) {
             <a href="mailto:booking@stagefrightrock.com" title="Stage Fright's support email"
               >booking@stagefrightrock.com</a
             >
-          </h2>  
+          </h2>
         </div>
         <div class="mb-4">
           <h2 class="flex text-2xl text-white justify-center font-bold mb-1">Phone Number</h2>
@@ -104,7 +130,7 @@ async function popup(text) {
 
     <h2 class="text-white font-loud text-5xl p-16 text-center">Frequently Asked Questions</h2>
 
-    <div class="flex flex-col px-8 ">
+    <div class="flex flex-col px-8">
       <div
         class="max-w-3xl my-4 space-y-6 bg-gray-200 rounded-lg p-8 hover:scale-105 transition-all"
       >

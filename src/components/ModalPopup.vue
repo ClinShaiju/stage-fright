@@ -8,7 +8,6 @@ props
 </script>
 
 <template>
-  <div>
     <Transition name="fade">
       <div
         v-if="show"
@@ -36,7 +35,6 @@ props
         </div>
       </div>
     </Transition>
-  </div>
 </template>
 
 <style>

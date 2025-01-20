@@ -7,7 +7,6 @@ props
 </script>
 
 <template>
-  <div>
     <Transition name="fade">
       <div
         v-show="show"
@@ -18,7 +17,6 @@ props
         <button class="text-green-800 font-bold"><a>X</a></button>
       </div>
     </Transition>
-  </div>
 </template>
 
 <style>

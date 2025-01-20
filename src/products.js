@@ -1,6 +1,6 @@
 const products = new Map()
 
-products.set('price_1QhN8bG0Ux6oILTKVBeZONhY', {
+products.set('price_1QhN8zG0Ux6oILTKo4ZeJ7aR', {
   name: 'Stage Fright Shirt',
   img: {
     main: '/assets/products/stagefright/shirt/main.png',
@@ -12,7 +12,7 @@ products.set('price_1QhN8bG0Ux6oILTKVBeZONhY', {
   price: 29.0,
   type: 'shirt',
 })
-products.set('price_1QhN6EG0Ux6oILTK45O02MEF', {
+products.set('price_1QhN93G0Ux6oILTKpFKbFLmF', {
   name: 'Stage Fright Hoodie',
   img: {
     main: '/assets/products/stagefright/hoodie/main.png',
@@ -24,7 +24,7 @@ products.set('price_1QhN6EG0Ux6oILTK45O02MEF', {
   price: 39.0,
   type: 'hoodie',
 })
-products.set('price_1QhNANG0Ux6oILTK8uEXWWfV', {
+products.set('price_1QhNB1G0Ux6oILTKgQ2joxnS', {
   name: 'Stage Fright Cap',
   img: {
     main: '/assets/products/stagefright/cap/main.png',
@@ -36,7 +36,7 @@ products.set('price_1QhNANG0Ux6oILTK8uEXWWfV', {
   price: 19.0,
   type: 'cap',
 })
-products.set('price_1QhNhlG0Ux6oILTKyrtyEjVn', {
+products.set('price_1QhNlKG0Ux6oILTKwOgMAWlp', {
   name: 'Zombie Shirt',
   img: {
     main: '/assets/products/zombie/shirt/main.png',
@@ -48,7 +48,7 @@ products.set('price_1QhNhlG0Ux6oILTKyrtyEjVn', {
   price: 29.0,
   type: 'shirt',
 })
-products.set('price_1QhNgdG0Ux6oILTK4MdxPYLY', {
+products.set('price_1QhNghG0Ux6oILTK58WCJUXn', {
   name: 'Zombie Hoodie',
   img: {
     main: '/assets/products/zombie/hoodie/main.png',
@@ -60,7 +60,7 @@ products.set('price_1QhNgdG0Ux6oILTK4MdxPYLY', {
   price: 39.0,
   type: 'hoodie',
 })
-products.set('price_1QhNjvG0Ux6oILTKpc5s5hOO', {
+products.set('price_1QhNlGG0Ux6oILTKENEIfFeK', {
   name: 'Zombie Cap',
   img: {
     main: '/assets/products/zombie/cap/main.jpg',
@@ -72,7 +72,7 @@ products.set('price_1QhNjvG0Ux6oILTKpc5s5hOO', {
   price: 19.0,
   type: 'cap',
 })
-products.set('price_1QhNinG0Ux6oILTK80Mqv37g', {
+products.set('price_1QhNlIG0Ux6oILTKRxsJwiGO', {
   name: 'Clown Shirt',
   img: {
     main: '/assets/products/clown/shirt/main.png',
@@ -84,7 +84,7 @@ products.set('price_1QhNinG0Ux6oILTK80Mqv37g', {
   price: 29.0,
   type: 'shirt',
 })
-products.set('price_1QhNfbG0Ux6oILTKpVtL7lFZ', {
+products.set('price_1QhNg3G0Ux6oILTK7ccqrv1S', {
   name: 'Clown Hoodie',
   img: {
     main: '/assets/products/clown/hoodie/main.png',
@@ -96,7 +96,7 @@ products.set('price_1QhNfbG0Ux6oILTKpVtL7lFZ', {
   price: 39.0,
   type: 'hoodie',
 })
-products.set('price_1QhNknG0Ux6oILTK5cpOx1bm', {
+products.set('price_1QhNlFG0Ux6oILTK6FqC38fZ', {
   name: 'Clown Cap',
   img: {
     main: '/assets/products/clown/cap/main.jpg',
@@ -108,7 +108,7 @@ products.set('price_1QhNknG0Ux6oILTK5cpOx1bm', {
   price: 19.0,
   type: 'cap',
 })
-products.set('price_1QhNDaG0Ux6oILTKbJQ0aNom', {
+products.set('price_1QhNE9G0Ux6oILTKCOgFd4Iy', {
   name: 'Tour Ticket',
   img: {
     main: '/assets/products/tickets.jpg',

@@ -106,7 +106,8 @@ const cart = {
   getTotal,
   validateQuantity,
   exportCart,
-  updateCookies
+  updateCookies,
+  restoreCart
 }
 
 console.log(getTotal())

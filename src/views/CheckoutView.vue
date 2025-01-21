@@ -6,6 +6,7 @@ const route = useRoute()
 console.log(route.query)
 
 if (route.query.success == 'true') cart.clearCart()
+else cart.restoreCart()
 
 const siteStore = useSiteStore()
 function checkoutButton() {

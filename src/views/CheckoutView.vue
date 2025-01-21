@@ -78,7 +78,7 @@ function buttonType() {
                   >
                     <div class="inline-flex h-12 w-auto self-end rounded-lg">
                       <button
-                        class="text-center aspect-square w-auto h-full border border-neutral-600 flex items-center justify-center"
+                        class="touch-manipulation text-center aspect-square w-auto h-full border border-neutral-600 flex items-center justify-center"
                         @click="cart.decrQty(product.price)"
                       >
                         -
@@ -90,7 +90,7 @@ function buttonType() {
                         @change="cart.validateQuantity(product.price)"
                       />
                       <button
-                        class="text-center aspect-square w-auto h-full border border-neutral-600 flex items-center justify-center"
+                        class="touch-manipulation text-center aspect-square w-auto h-full border border-neutral-600 flex items-center justify-center"
                         @click="cart.incrQty(product.price)"
                       >
                         +

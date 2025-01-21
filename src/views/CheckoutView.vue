@@ -5,6 +5,8 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 console.log(route.query)
 
+if (route.query.success == 'true') cart.clearCart()
+
 const siteStore = useSiteStore()
 function checkoutButton() {
   if (siteStore.cart.length == 0) {

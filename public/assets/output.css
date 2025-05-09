@@ -723,6 +723,10 @@ video {
   height: 8rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[80px\] {
   height: 80px;
 }
@@ -857,6 +861,10 @@ video {
   max-width: 12rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -939,6 +947,10 @@ video {
 
 .cursor-default {
   cursor: default;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
 }
 
 .grid-cols-1 {

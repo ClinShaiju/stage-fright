@@ -26,6 +26,8 @@ async function popup(text) {
     <div class="flex flex-col items-center w-full">
       <MiniPopup :show="popuped" :text="popupText" @close="popuped = false"></MiniPopup>
       <h1 class="text-6xl text-white font-thedark mb-8">TOURS</h1>
+
+      <iframe class="w-full h-96 mb-10 max-w-4xl " src="https://stagefright.travelmap.net" title="Stage Fright Tour Map"></iframe>
       <ul class="flex flex-col items-center w-full">
         <li
           v-for="[id, tour] in tours.entries()"

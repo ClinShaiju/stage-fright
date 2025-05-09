@@ -21,7 +21,7 @@ function closePopup() {
 </script>
 
 <template>
-  <div class="flex flex-col bg-neutral-900 min-h-dvh items-center px-4 md:px-10 py-6">
+  <div class="flex flex-col bg-neutral-900 min-h-dvh items-center">
     <ModalPopup :show="popuped" @close="closePopup()">
       <h1 class="font-loud text-white text-5xl text-center w-full">
         {{ aboutInfo.get(popupInfo).name }}
@@ -29,7 +29,9 @@ function closePopup() {
       <h2 class="text-white text-3xl text-center w-full">
         <a class="font-loud">Age:</a> <a class="text-2xl">{{ aboutInfo.get(popupInfo).age }}</a>
       </h2>
-      <div class="flex flex-col-reverse md:flex-row md:mt-4 divide-solid md:divide-x divide-neutral-800 w-full">
+      <div
+        class="flex flex-col-reverse md:flex-row md:mt-4 divide-solid md:divide-x divide-neutral-800 w-full"
+      >
         <div class="flex-grow flex-1 md:mt-8 align-middle p-4">
           <p class="text-white text-3xl">
             <a class="font-loud">Role: </a>
@@ -186,7 +188,8 @@ function closePopup() {
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="bg-black relative container p-8">
       <div class="flex flex-col items-center justify-center">
         <h1
           class="flex text-white font-thedark items-center justify-center text-center text-6xl mb-8"
@@ -196,21 +199,6 @@ function closePopup() {
         <div
           class="flex flex-col max-w-screen-2xl p-3 ml-3 text-center mb-8 text-white text-lg gap-6"
         >
-          <p>
-            In the sweat-drenched suburbs of Tampa, Florida, four misfits collided at the crossroads
-            of boredom and raw ambition. Paul Carter, a choir kid with a heart-shattering voice, met
-            Gene Martin, a would-be med student dreaming of basslines instead of biology. Across
-            town, Ace Kinley, a fiery Pittsburgh transplant, was teaching himself guitar at
-            breakneck speed, while Peter Winters, a quiet Texan with a love for deafening drums and
-            death metal, perfected his chaotic beats in a vibrating room of noise.
-          </p>
-          <p>
-            Fate—or dumb luck—brought them together. An overheard melody, a heated argument about
-            metal drummers, and a spontaneous jam session in Ace’s motor-oil-scented garage ignited
-            something electric. That first gathering was pure, unfiltered chaos—a firestorm of sound
-            that felt like magic. By sophomore year, their debut gig at Don’s Barbeque left a
-            stunned crowd reeling from their raw, unapologetic energy.
-          </p>
           <p>
             With every late-night jam and every broken string, Stage Fright was forged—not just as a
             band, but as a force. They poured their angst, dreams, and defiance into music that
@@ -222,4 +210,118 @@ function closePopup() {
       </div>
     </div>
   </div>
+
+  <body class="antialiased">
+    <div class="relative container mx-auto px-6 flex flex-col space-y-8">
+      <!-- Vertical timeline line -->
+      <div class="absolute z-0 w-1 bg-gray-300 h-full left-1/2 transform -translate-x-1/2"></div>
+
+      <!-- Timeline Events -->
+      <div class="relative z-10 group">
+        <div class="timeline-container">
+          <div class="timeline-pointer" aria-hidden="true"></div>
+          <div
+            class="bg-white p-6 rounded-md shadow-md w-full md:w-1/2 mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
+          >
+            <span class="font-bold text-red-800 text-sm tracking-wide">March 2005</span>
+            <h1 class="text-2xl font-bold pt-1">Band Formation</h1>
+            <div
+              class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-40"
+            >
+              <p class="pt-2 text-gray-700">
+                The members—Paul Carter, Gene Martin, Ace Kinley, and Peter Winters—form Stage
+                Fright in Tampa, Florida, during their senior year of high school. What starts in
+                Ace’s garage quickly becomes a serious pursuit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative z-10 group">
+        <div class="timeline-container">
+          <div class="timeline-pointer" aria-hidden="true"></div>
+          <div
+            class="bg-white p-6 rounded-md shadow-md w-full md:w-1/2 mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
+          >
+            <span class="font-bold text-red-800 text-sm tracking-wide">September 2006</span>
+            <h1 class="text-2xl font-bold pt-1">First Live Performance</h1>
+            <div
+              class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-40"
+            >
+              <p class="pt-2 text-gray-700">
+                They land their first gig at Don’s Barbeque, a local Tampa favorite. The performance
+                marks the beginning of their journey as live performers, winning over the local
+                crowd.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative z-10 group">
+        <div class="timeline-container">
+          <div class="timeline-pointer" aria-hidden="true"></div>
+          <div
+            class="bg-white p-6 rounded-md shadow-md w-full md:w-1/2 mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
+          >
+            <span class="font-bold text-red-800 text-sm tracking-wide">April 2010</span>
+            <h1 class="text-2xl font-bold pt-1">Debut Album: Escape</h1>
+            <div
+              class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-40"
+            >
+              <p class="pt-2 text-gray-700">
+                Stage Fright releases their debut album, <em>Escape</em>, capturing the raw emotion
+                and high energy of their early years. The album earns critical praise in local rock
+                scenes and builds their underground fanbase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative z-10 group">
+        <div class="timeline-container">
+          <div class="timeline-pointer" aria-hidden="true"></div>
+          <div
+            class="bg-white p-6 rounded-md shadow-md w-full md:w-1/2 mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
+          >
+            <span class="font-bold text-red-800 text-sm tracking-wide">August 2013</span>
+            <h1 class="text-2xl font-bold pt-1">Breakout Album: Scared to Death</h1>
+            <div
+              class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-40"
+            >
+              <p class="pt-2 text-gray-700">
+                With a darker, more refined sound, <em>Scared to Death</em> becomes their breakout
+                album. The album cover and sound receive attention from national indie rock blogs
+                and podcasts, pushing the band into a broader spotlight.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative z-10 group">
+        <div class="timeline-container">
+          <div class="timeline-pointer" aria-hidden="true"></div>
+          <div
+            class="bg-white p-6 rounded-md shadow-md w-full md:w-1/2 mx-auto transition-transform duration-300 ease-in-out group-hover:scale-105 mb-8"
+          >
+            <span class="font-bold text-red-800 text-sm tracking-wide">May 2025</span>
+            <h1 class="text-2xl font-bold pt-1">U.S. Tour Launch</h1>
+            <div
+              class="opacity-0 max-h-0 md:overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-40"
+            >
+              <p class="pt-2 text-gray-700">
+                Following the release of their third studio album, <em>Endorphins</em>, the band
+                embarks on their first nationwide U.S. tour, playing in over 30 cities. The tour
+                marks their biggest milestone, solidifying Stage Fright as a rising force in the
+                rock scene.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </template>
